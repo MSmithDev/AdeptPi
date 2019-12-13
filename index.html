@@ -1,19 +1,135 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="UTF-8">
-    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
-    <title>Hello World!</title>
-  </head>
-  <body>
-    <h1>Hello World!</h1>
-    We are using Node.js <span id="node-version"></span>,
-    Chromium <span id="chrome-version"></span>,
-    and Electron <span id="electron-version"></span>.
 
-    <!-- You can also require other files to run in this process -->
-    <script src="./renderer.js"></script>
-  </body>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'">
+  <link rel="stylesheet" href="style.css">
+  <title>Hello World!</title>
+</head>
+
+
+<body>
+
+
+<!-- Top status bar-->
+
+  <div id="topBarContainer">
+
+
+    <div id="topBar1">
+      <img class="logo-center" src="res/logo/logo_msmithdev.png" height="30" width="143">
+
+    </div>
+
+    <div id="topBar2">
+      logo_adeptPi
+
+    </div>
+
+    <div id="topBarIco1">
+      Ico1
+
+    </div>
+
+    <div id="topBarIco2">
+      Ico2
+
+    </div>
+    <div id="topBarIco3">
+      Ico3
+
+    </div>
+
+    <div id="topBarStatus">
+      Status
+
+    </div>
+
+
+  </div>
+<!-- Top status bar-->
+
+<!-- main container-->
+
+<div id="mainContainer">
+  
+  <!-- main tabs container-->
+
+<div id="mainTabsContainer">
+  
+
+
+<div class="tab">
+  <button class="tablinks" id="mainTabButton">Status</button>
+  <button class="tablinks" id="moveTabButton">Move</button>
+  <button class="tablinks" id="monitorTabButton">Monitor</button>
+  <button class="tablinks" id="remoteTabButton">Remote</button> 
+</div>
+
+<!-- main tab -->
+
+<div id="mainTab" class="tabcontent">
+  main content
+</div>
+
+
+<!-- main tab -->
+
+
+
+<!-- Move tab -->
+
+<div id="moveTab" class="tabcontent">
+  move content
+</div>
+
+
+<!-- Move tab -->
+
+<!-- Monitor tab -->
+
+<div id="monitorTab" class="tabcontent">
+  monitor content
+</div>
+
+
+<!-- Monitor tab -->
+
+<!-- Remote tab -->
+
+<div id="remoteTab" class="tabcontent">
+  remote content
+</div>
+
+
+<!-- Remote tab -->
+
+
+</div>
+
+  <!-- main tabs container-->
+
+
+
+  
+</div>
+
+<!-- main container-->
+
+
+
+
+
+
+  <!-- You can also require other files to run in this process -->
+  <script src="./renderer.js"></script>
+  <script src="./ui.js"></script>
+</body>
+
+
+
 </html>
