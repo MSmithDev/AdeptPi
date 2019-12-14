@@ -2,7 +2,7 @@ body {
     background-color: powderblue;
     margin: 0;
     width: 800px;
-    height: 600px;
+    height: 480px;
 }
 
 .logo-center {
@@ -59,7 +59,7 @@ body {
 #mainContainer {
     background-color: lightpink;
     width: 800px;
-    height: 540;
+    height: 360px;
 }
 
 #mainTabsContainer {
@@ -132,24 +132,24 @@ body {
 
 #mainTab {
     background-color: yellow;
-    height: 479px;
+    height: 359px;
     width: 800px;
 }
 
 #moveTab {
     background-color: palegreen;
-    height: 479px;
+    height: 359px;
     width: 800px;
 }
 
 #monitorTab {
     background-color: lightcoral;
-    height: 479px;
+    height: 359px;
     width: 800px;
 }
 
 #remoteTab {
     background-color: goldenrod;
-    height: 479px;
+    height: 359px;
     width: 800px;
 }

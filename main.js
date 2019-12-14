@@ -9,11 +9,11 @@ let mainWindow
 function createWindow () {
   // Create the browser window.
   mainWindow = new BrowserWindow({
-    width: 720,
+    width: 800,
     height: 480,
     resizable: false,
     frame: false,
-    fullscreen: true,
+    
     webPreferences: {
       preload: path.join(__dirname, 'preload.js')
     }
