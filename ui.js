@@ -1,6 +1,6 @@
 
 
-
+const { ipcRenderer } = require('electron')
 //Tabs
 openTab('mainTab');
 const mainTab = document.getElementById('mainTabButton');
@@ -10,6 +10,7 @@ const monitorTab = document.getElementById('monitorTabButton');
 const remoteTab = document.getElementById('remoteTabButton');
 const gcodeTab = document.getElementById('gcodeTabButton');
 const optionsTab = document.getElementById('optionsTabButton');
+const exitTab = document.getElementById('exitTabButton');
 
 mainTab.addEventListener('click', function(event){
     openTab('mainTab');
@@ -35,6 +36,10 @@ optionsTab.addEventListener('click', function(event){
   openTab('optionsTab');
   optionsTab.className +=" active";
 });
+exitTab.addEventListener('click', function(event){
+  openTab('exitTab');
+  exitTab.className +=" active";
+});
 
 function openTab(tabName) {
     // Declare all variables
@@ -59,3 +64,13 @@ function openTab(tabName) {
 
 
 
+
+
+
+  //Exit Tab
+
+  const exitApp = document.getElementById('exitApp');
+  exitApp.addEventListener('click', function(event){
+    console.log("Quit")
+    console.log(ipcRenderer.send('exit-app','ping'));
+  });
