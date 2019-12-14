@@ -154,6 +154,18 @@ body {
     width: 800px;
 }
 
+#gcodeTab {
+    background-color: khaki;
+    height: 359px;
+    width: 800px;
+}
+
+#optionsTab {
+    background-color: rosybrown;
+    height: 359px;
+    width: 800px;
+}
+
 #moveLeftContainer {
     background-color: orange;
     width: 500px;
