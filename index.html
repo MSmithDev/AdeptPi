@@ -13,7 +13,13 @@
 
 
 <body>
-
+  <div id="overlay-calibration">
+    
+    <div id="clarknet">
+        Overlay_1 <img id="mdss" src="res/spinner5.png" width="128px" height="128px">
+    </div>
+    
+  </div>
 
 <!-- Top status bar-->
 
@@ -29,20 +35,25 @@
       logo_adeptPi
 
     </div>
-
+  <div id="topBarIcoContainer"> 
     <div id="topBarIco1">
-      Ico1
+      <svg id="topBarIco1svg" class="icon icon-power-red" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-power"></use></svg>
 
     </div>
 
     <div id="topBarIco2">
-      Ico2
+      <svg id="topBarIco2svg" class="icon icon-terminal" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-terminal"></use></svg>
 
     </div>
     <div id="topBarIco3">
-      Ico3
+      <svg id="topBarIco3svg" class="icon icon-tree" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-tree"></use></svg>
 
     </div>
+    <div id="topBarIco4">
+      <svg id="topBarIco4svg" class="icon icon-tree" height="30px" width="30px"><use xlink:href="res/symbol-defs.svg#icon-tree"></use></svg>
+
+    </div>
+  </div>
 
     <div id="topBarStatus">
       Status
@@ -77,6 +88,7 @@
 
 <div id="mainTab" class="tabcontent">
   main content
+  <svg class="icon icon-home" height="20px" width="20px"><use xlink:href="res/symbol-defs.svg#icon-home"></use></svg><span class="name"> icon-home</span>
 </div>
 
 
@@ -193,7 +205,7 @@
 
   <!-- You can also require other files to run in this process -->
   
-  
+  <script src="res/svgxuse.js"></script>
   <script src="./ui.js"></script>
   <script src="./numericInput.js"></script>
   <script src="./renderer.js"></script>
