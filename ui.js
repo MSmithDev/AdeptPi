@@ -130,7 +130,7 @@ function calibrateOverlayOn() {
 function calibrateOverlayOff() {
   document.getElementById("overlay-calibration").style.display = "none";
 }
-calibrateOverlayOn();
+//calibrateOverlayOn();
 
 
 
