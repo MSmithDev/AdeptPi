@@ -151,4 +151,11 @@ const calibrateOverlay = async () => {
   }
 };
 
-calibrateOverlay();
+//calibrateOverlay();
+
+
+adeptMonitor = new AdeptMonitor("CNCA0", 9600);
+adeptUtils = new AdeptUtils(adeptMonitor);
+console.log("util X pos: " + adeptUtils.posXYZ.X)
+adeptUtils.updatePos(adeptMonitor.getCurrentPosition());
+console.log("util X pos: " + adeptUtils.posXYZ.X)
