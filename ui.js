@@ -1,4 +1,5 @@
 const { ipcRenderer } = require("electron");
+const SerialPort = require('serialport')
 //Tabs
 openTab("mainTab");
 const mainTab = document.getElementById("mainTabButton");
