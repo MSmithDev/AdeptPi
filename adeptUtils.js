@@ -2,10 +2,6 @@ function AdeptUtils(adeptMonitor) {
   this.mon = adeptMonitor;
 
   //state variables
-  this.isHighPowerEnabled = false;
-  this.isCalibrated = false;
-  this.isExecuting = false;
-  this.isNfsConnected = false;
   this.ipAddress = "0.0.0.0";
 
 
@@ -45,7 +41,12 @@ function AdeptUtils(adeptMonitor) {
     R: 0
   };
 
-  this.status = {};
+  this.status = {
+    isHighPowerEnabled: false,
+    isCalibrated: false,
+    isExecuting: false,
+    isNfsConnected: false
+  };
 }
 
 // Get Status msg
