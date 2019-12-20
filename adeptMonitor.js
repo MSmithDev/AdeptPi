@@ -52,6 +52,21 @@ AdeptMonitor.prototype.getCurrentPosition = function() {
 };
 
 
+AdeptMonitor.prototype.getCalibrationStatus = function() {
+
+  temp = "NOT.CALIBRATED       1"
+  resp = temp.replace(/\s+/g,' ').trim(); //Working method of formatting string
+  resp2 = resp.split(':').join('').split(" ");
+  console.log("cal Status db: " + resp)
+  console.log("cal Status db: " + resp2[1])
+  if(resp2[1] == 0){
+    return true;
+  }
+  else {
+    return false;
+  }
+};
+
 
 
 
