@@ -1,13 +1,13 @@
 {
-  "name": "electron-quick-start",
+  "name": "adept-pi",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "User interface for Adept based robots running V+ 13",
   "main": "main.js",
   "scripts": {
     "start": "electron .",
     "install": "electron-rebuild"
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "https://github.com/MSmithDev/AdeptPi",
   "keywords": [
     "Electron",
     "quick",
@@ -15,7 +15,7 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
+  "author": "MSmithDev",
   "license": "CC0-1.0",
   "devDependencies": {
     "electron": "^7.1.4",
