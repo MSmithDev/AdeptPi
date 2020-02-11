@@ -4,10 +4,6 @@ function AdeptUtils(adeptMonitor) {
   //state variables
   this.ipAddress = "0.0.0.0";
 
-
-
-
-
   this.posJ = {
     J1: -1,
     J2: -1,

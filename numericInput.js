@@ -1,9 +1,5 @@
 
-  
-
-
-  
-
+  const numericInput0 = document.getElementById('numericInput0');
   const numericInput1 = document.getElementById('numericInput1');
   const numericInput2 = document.getElementById('numericInput2');
   const numericInput3 = document.getElementById('numericInput3');
