@@ -6,7 +6,7 @@ const mainTab = document.getElementById("mainTabButton");
 mainTab.className += " active";
 const moveTab = document.getElementById("moveTabButton");
 const monitorTab = document.getElementById("monitorTabButton");
-const remoteTab = document.getElementById("remoteTabButton");
+const visionTab = document.getElementById("visionTabButton");
 const gcodeTab = document.getElementById("gcodeTabButton");
 const optionsTab = document.getElementById("optionsTabButton");
 const exitTab = document.getElementById("exitTabButton");
@@ -23,9 +23,9 @@ monitorTab.addEventListener("click", function(event) {
   openTab("monitorTab");
   monitorTab.className += " active";
 });
-remoteTab.addEventListener("click", function(event) {
-  openTab("remoteTab");
-  remoteTab.className += " active";
+visionTab.addEventListener("click", function(event) {
+  openTab("visionTab");
+  visionTab.className += " active";
 });
 gcodeTab.addEventListener("click", function(event) {
   openTab("gcodeTab");
